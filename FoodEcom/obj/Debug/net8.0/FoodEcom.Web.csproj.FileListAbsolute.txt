@@ -31,3 +31,4 @@ C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\obj\Debug\net8.0\refint\FoodEcom
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\obj\Debug\net8.0\FoodEcom.Web.pdb
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\obj\Debug\net8.0\FoodEcom.Web.genruntimeconfig.cache
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\obj\Debug\net8.0\ref\FoodEcom.Web.dll
+C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\obj\Debug\net8.0\FoodEcom.Web.sourcelink.json
