@@ -23,6 +23,10 @@ namespace FoodEcom.Web.Controllers
             {
                 list = JsonConvert.DeserializeObject<List<CouponDto>>(Convert.ToString(response.Result));
             }
+            else
+            {
+                TempData["error"] = response?.Message;
+            }
             return View(list);
         }
 
@@ -40,7 +44,11 @@ namespace FoodEcom.Web.Controllers
 				CouponDto couponDto = JsonConvert.DeserializeObject<CouponDto>(Convert.ToString(response.Result));
 				return View(couponDto);
 			}
-			return NotFound();
+            else
+            {
+                TempData["error"] = response?.Message;
+            }
+            return NotFound();
         }
 
         [HttpPost]
@@ -50,7 +58,12 @@ namespace FoodEcom.Web.Controllers
 
             if (response != null && response.IsSuccess)
             {
+                TempData["success"] = "Coupon deleted successfully";
                 return RedirectToAction("CouponIndex");
+            }
+            else
+            {
+                TempData["error"] = response?.Message;
             }
             return View(couponDto);
         }
@@ -64,7 +77,12 @@ namespace FoodEcom.Web.Controllers
 
                 if (response != null && response.IsSuccess)
                 {
+                    TempData["success"] = "Coupon created successfully";
                     return RedirectToAction("CouponIndex");
+                }
+                else
+                {
+                    TempData["error"] = response?.Message;
                 }
             }
             return View(couponDto);

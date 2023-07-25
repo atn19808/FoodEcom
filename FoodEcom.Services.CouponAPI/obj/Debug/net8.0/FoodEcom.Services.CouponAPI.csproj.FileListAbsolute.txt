@@ -77,3 +77,4 @@ C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.pdb
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.genruntimeconfig.cache
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\ref\FoodEcom.Services.CouponAPI.dll
+C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.sourcelink.json
