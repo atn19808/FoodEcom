@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33808.371
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{F979F726-42F4-4E11-BB22-0C59373A1BA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{EBCA4EA3-F71B-45F5-9293-7FA840F32A9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{49916336-7E86-43EE-95AF-AA610EE03140}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{937A333E-DA4F-4C7B-A41E-1B58DA90451C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodEcom.Services.CouponAPI", "FoodEcom.Services.CouponAPI\FoodEcom.Services.CouponAPI.csproj", "{EA27B34C-9ED3-43BA-A6AF-66FBA76E6DBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodEcom.Web", "FoodEcom\FoodEcom.Web.csproj", "{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA27B34C-9ED3-43BA-A6AF-66FBA76E6DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA27B34C-9ED3-43BA-A6AF-66FBA76E6DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA27B34C-9ED3-43BA-A6AF-66FBA76E6DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA27B34C-9ED3-43BA-A6AF-66FBA76E6DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA27B34C-9ED3-43BA-A6AF-66FBA76E6DBA} = {937A333E-DA4F-4C7B-A41E-1B58DA90451C}
+		{4AF1D151-A970-431B-BF5C-53C8A23E9EE8} = {F979F726-42F4-4E11-BB22-0C59373A1BA3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDC8674D-5750-44E0-B7E2-75B176A91414}
+	EndGlobalSection
+EndGlobal
