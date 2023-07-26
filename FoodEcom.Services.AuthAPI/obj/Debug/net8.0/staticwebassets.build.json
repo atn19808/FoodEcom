@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "j/tUkfHSjmf0RJrfTIaTKGwZLqzSWJpyMJdyDe9KiLQ=",
+  "Source": "FoodEcom.Services.AuthAPI",
+  "BasePath": "_content/FoodEcom.Services.AuthAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

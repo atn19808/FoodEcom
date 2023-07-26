@@ -11,9 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{937A333E-DA4F-4C7B-A41E-1B58DA90451C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodEcom.Services.CouponAPI", "FoodEcom.Services.CouponAPI\FoodEcom.Services.CouponAPI.csproj", "{EA27B34C-9ED3-43BA-A6AF-66FBA76E6DBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodEcom.Services.CouponAPI", "FoodEcom.Services.CouponAPI\FoodEcom.Services.CouponAPI.csproj", "{EA27B34C-9ED3-43BA-A6AF-66FBA76E6DBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodEcom.Web", "FoodEcom\FoodEcom.Web.csproj", "{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodEcom.Web", "FoodEcom\FoodEcom.Web.csproj", "{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodEcom.Services.AuthAPI", "FoodEcom.Services.AuthAPI\FoodEcom.Services.AuthAPI.csproj", "{09DEDB78-E6C0-4589-8A09-24E415269CA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AF1D151-A970-431B-BF5C-53C8A23E9EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09DEDB78-E6C0-4589-8A09-24E415269CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DEDB78-E6C0-4589-8A09-24E415269CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DEDB78-E6C0-4589-8A09-24E415269CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DEDB78-E6C0-4589-8A09-24E415269CA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{EA27B34C-9ED3-43BA-A6AF-66FBA76E6DBA} = {937A333E-DA4F-4C7B-A41E-1B58DA90451C}
 		{4AF1D151-A970-431B-BF5C-53C8A23E9EE8} = {F979F726-42F4-4E11-BB22-0C59373A1BA3}
+		{09DEDB78-E6C0-4589-8A09-24E415269CA1} = {937A333E-DA4F-4C7B-A41E-1B58DA90451C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDC8674D-5750-44E0-B7E2-75B176A91414}
