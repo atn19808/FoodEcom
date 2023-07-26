@@ -32,3 +32,8 @@ C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\obj\Debug\net8.0\FoodEcom.Web.pd
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\obj\Debug\net8.0\FoodEcom.Web.genruntimeconfig.cache
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\obj\Debug\net8.0\ref\FoodEcom.Web.dll
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\obj\Debug\net8.0\FoodEcom.Web.sourcelink.json
+C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "Kwb7GbVZH+UfX1n0+/HX7GDGYBjcLh9zuiBtr/LEba58PiS+iPUPEhyxkqWRCbpquD4O9haav0RlNMiRNVq+7g==",
+  "dgSpecHash": "7cl6YWstkJZyxMlV71zmtCNdC5vS0+1N7dnAiODDKkMEmk1ruCTHe8em7TVGmNWfAdqQZQiQ6pm57BhqFWdYxQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anh Ngo\\source\\repos\\FoodEcom\\FoodEcom\\FoodEcom.Web.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Anh Ngo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Anh Ngo\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.1.0-preview\\microsoft.identitymodel.abstractions.7.1.0-preview.nupkg.sha512",
+    "C:\\Users\\Anh Ngo\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.1.0-preview\\microsoft.identitymodel.jsonwebtokens.7.1.0-preview.nupkg.sha512",
+    "C:\\Users\\Anh Ngo\\.nuget\\packages\\microsoft.identitymodel.logging\\7.1.0-preview\\microsoft.identitymodel.logging.7.1.0-preview.nupkg.sha512",
+    "C:\\Users\\Anh Ngo\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.1.0-preview\\microsoft.identitymodel.tokens.7.1.0-preview.nupkg.sha512",
+    "C:\\Users\\Anh Ngo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Anh Ngo\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.1.0-preview\\system.identitymodel.tokens.jwt.7.1.0-preview.nupkg.sha512",
+    "C:\\Users\\Anh Ngo\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
+    "C:\\Users\\Anh Ngo\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }
