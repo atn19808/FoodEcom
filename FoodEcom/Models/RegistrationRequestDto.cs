@@ -1,4 +1,4 @@
-﻿namespace FoodEcom.Services.AuthAPI.Models.Dto
+﻿namespace FoodEcom.Web.Models
 {
     public class RegistrationRequestDto
     {
