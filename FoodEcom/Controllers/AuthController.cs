@@ -1,6 +1,8 @@
 ﻿using FoodEcom.Web.Models;
 using FoodEcom.Web.Service.IService;
+using FoodEcom.Web.Utility;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace FoodEcom.Web.Controllers
 {
@@ -23,6 +25,12 @@ namespace FoodEcom.Web.Controllers
         [HttpGet]
         public IActionResult Register()
         {
+            var roleList = new List<SelectListItem>()
+            { 
+                new SelectListItem{ Text=SD.RoleAdmin, Value=SD.RoleAdmin },
+                new SelectListItem{ Text=SD.RoleCustomer, Value=SD.RoleCustomer }
+            };
+            ViewBag.roleList = roleList;
             return View();
         }
         [HttpGet]
