@@ -1,5 +1,4 @@
 ﻿using FoodEcom.Web.Models;
-using FoodEcom.Web.Service;
 using FoodEcom.Web.Service.IService;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -58,8 +57,8 @@ namespace FoodEcom.Web.Controllers
 
 			if (response != null && response.IsSuccess)
 			{
-				TempData["success"] = "Coupon deleted successfully";
-				return RedirectToAction("CouponIndex");
+				TempData["success"] = "Product deleted successfully";
+				return RedirectToAction("ProductIndex");
 			}
 			else
 			{
@@ -69,7 +68,7 @@ namespace FoodEcom.Web.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> CouponCreate(ProductDto productDto)
+		public async Task<IActionResult> ProductCreate(ProductDto productDto)
 		{
 			if (ModelState.IsValid)
 			{
@@ -77,8 +76,8 @@ namespace FoodEcom.Web.Controllers
 
 				if (response != null && response.IsSuccess)
 				{
-					TempData["success"] = "Coupon created successfully";
-					return RedirectToAction("CouponIndex");
+					TempData["success"] = "Product created successfully";
+					return RedirectToAction("ProductIndex");
 				}
 				else
 				{
