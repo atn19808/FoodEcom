@@ -15,7 +15,7 @@ namespace FoodEcom.Services.AuthAPI.Service
         {
             _jwtOptions = jwtOptions.Value;
         }
-        public string GenerateToken(ApplicationUser applicationUser)
+        public string GenerateToken(ApplicationUser applicationUser, IEnumerable<string> roles)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
 
@@ -27,6 +27,7 @@ namespace FoodEcom.Services.AuthAPI.Service
                 new Claim(JwtRegisteredClaimNames.Name, applicationUser.UserName.ToString())
 
             };
+            claimList.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
