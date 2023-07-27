@@ -64,7 +64,7 @@ namespace FoodEcom.Web.Service
             {
                 ApiType = SD.ApiType.PUT,
                 Data = couponDto,
-                Url = SD.CouponAPIBase + "/api/coupon/"
+                Url = SD.CouponAPIBase + "/api/coupon"
             });
         }
     }

@@ -63,6 +63,7 @@ C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.csproj.CoreCompileInputs.cache
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.sourcelink.json
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\staticwebassets\msbuild.FoodEcom.Services.CouponAPI.Microsoft.AspNetCore.StaticWebAssets.props
@@ -77,4 +78,3 @@ C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.pdb
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.genruntimeconfig.cache
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\ref\FoodEcom.Services.CouponAPI.dll
-C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.CouponAPI\obj\Debug\net8.0\FoodEcom.Services.CouponAPI.sourcelink.json

@@ -4,10 +4,7 @@ using FoodEcom.Services.CouponAPI.Data;
 using FoodEcom.Services.CouponAPI.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using System.Security.Cryptography.Xml;
-using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 

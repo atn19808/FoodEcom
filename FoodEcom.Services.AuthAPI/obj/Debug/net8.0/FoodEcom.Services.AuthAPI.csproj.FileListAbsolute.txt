@@ -11,6 +11,7 @@ C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\bin\Debug\net8.
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\bin\Debug\net8.0\Humanizer.dll
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
@@ -78,4 +79,3 @@ C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\obj\Debug\net8.
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\obj\Debug\net8.0\FoodEcom.Services.AuthAPI.pdb
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\obj\Debug\net8.0\FoodEcom.Services.AuthAPI.genruntimeconfig.cache
 C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\obj\Debug\net8.0\ref\FoodEcom.Services.AuthAPI.dll
-C:\Users\Anh Ngo\source\repos\FoodEcom\FoodEcom.Services.AuthAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

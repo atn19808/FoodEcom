@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodEcom.Services.AuthAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f58e0fe4e99e14b214b207602b7019807c01aa30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93f9cec84763b30101a66de3ec637f4aac860a9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodEcom.Services.AuthAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodEcom.Services.AuthAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
