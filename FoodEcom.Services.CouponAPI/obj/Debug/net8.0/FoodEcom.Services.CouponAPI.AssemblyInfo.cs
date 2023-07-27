@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodEcom.Services.CouponAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8498b153d0d01e759269b302c30f0717dc5238f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+868e457e3c7d0014fa6201f8a1ea6b37e5ad727e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodEcom.Services.CouponAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodEcom.Services.CouponAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

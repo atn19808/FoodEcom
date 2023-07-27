@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodEcom.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcf2a233aea3b976cd0449fad764a052fbb34529")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+868e457e3c7d0014fa6201f8a1ea6b37e5ad727e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodEcom.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodEcom.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
