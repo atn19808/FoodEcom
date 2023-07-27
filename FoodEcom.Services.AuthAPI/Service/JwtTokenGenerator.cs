@@ -31,7 +31,7 @@ namespace FoodEcom.Services.AuthAPI.Service
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Audience = applicationUser.Name,
+                Audience = _jwtOptions.Audience,
                 Issuer = _jwtOptions.Issuer,
                 Subject = new ClaimsIdentity(claimList),
                 Expires = DateTime.Now.AddDays(7),
