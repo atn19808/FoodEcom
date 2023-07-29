@@ -49,5 +49,15 @@ namespace FoodEcom.Web.Service
                 Url = SD.ShoppingCartAPIBase + "/api/cart/CartUpsert"
             }); 
         }
+
+        public async Task<ResponseDto?> EmailCartAsync(CartDto cartDto)
+        {
+            return await _baseService.SendAsync(new Models.RequestDto()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = cartDto,
+                Url = SD.ShoppingCartAPIBase + "/api/cart/EmailCartRequest"
+            });
+        }
     }
 }
