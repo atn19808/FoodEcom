@@ -9,7 +9,7 @@ namespace FoodEcom.Services.CouponAPI.Controllers
 {
     [Route("api/coupon")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class CouponAPIController : Controller
     {
         private readonly ApplicationDbContext _db;
