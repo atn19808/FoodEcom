@@ -17,7 +17,6 @@ namespace FoodEcom.Web.Service
             return await _baseService.SendAsync(new Models.RequestDto()
             {
                 ApiType = SD.ApiType.GET,
-                Data = userId,
                 Url = SD.ShoppingCartAPIBase + "/api/cart/GetCart/" + userId
             });
         }
