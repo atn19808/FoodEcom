@@ -1,4 +1,4 @@
-﻿namespace FoodEcom.Web.Models
+﻿namespace FoodEcom.Services.EmailAPI.Models.Dto
 {
     public class ProductDto
     {
@@ -8,6 +8,7 @@
         public string Description { get; set; }
         public string CategoryName { get; set; }
         public string ImageUrl { get; set; }
+
         public int Count { get; set; } = 1;
     }
 }
