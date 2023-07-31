@@ -99,7 +99,7 @@ namespace FoodEcom.Services.ShoppingCartAPI.Controllers
             try
             {
                 await _messageBus.PublishMessage(cartDto, _configuration.GetValue<string>
-                    ("TopicAndQueueName:EmailShoppingCartQueue"));
+                    ("TopicAndQueueNames:EmailShoppingCartQueue"));
                 _response.Result = true;
             }
             catch (Exception ex)

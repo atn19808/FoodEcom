@@ -15,7 +15,7 @@ namespace FoodEcom.Services.EmailAPI.Extension
             hostApplicationLife.ApplicationStarted.Register(OnStart);
             hostApplicationLife.ApplicationStopping.Register(OnStop);
 
-            return app
+            return app;
         }
 
         private static void OnStop()
