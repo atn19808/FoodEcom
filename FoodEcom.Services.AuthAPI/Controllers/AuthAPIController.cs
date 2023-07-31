@@ -1,4 +1,5 @@
-﻿using FoodEcom.Services.AuthAPI.Models.Dto;
+﻿using FoodEcom.MessageBus;
+using FoodEcom.Services.AuthAPI.Models.Dto;
 using FoodEcom.Services.AuthAPI.Service.IService;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,11 +10,16 @@ namespace FoodEcom.Services.AuthAPI.Controllers
     public class AuthAPIController : Controller
     {
         private readonly IAuthService _authService;
+        private readonly IConfiguration _configuration;
+        private readonly IMessageBus _messageBus;
         protected ResponseDto _response;
 
-        public AuthAPIController(IAuthService authService)
+        public AuthAPIController(IAuthService authService, IMessageBus messageBus, IConfiguration configuration)
         {
             _authService = authService; 
+            _messageBus = messageBus;
+            _configuration = configuration;
+
             _response = new ResponseDto();
         }
 
@@ -27,6 +33,7 @@ namespace FoodEcom.Services.AuthAPI.Controllers
                 _response.Message = errorMessage;
                 return BadRequest(_response);
             }
+            await _messageBus.PublishMessage(model.Email, _configuration.GetValue<string>("TopicAndQueueNames:RegisterUserQueue"));
             return Ok(_response);
         }
 

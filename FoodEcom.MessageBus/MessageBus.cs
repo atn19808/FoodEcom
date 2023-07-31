@@ -6,7 +6,7 @@ namespace FoodEcom.MessageBus
 {
     public class MessageBus : IMessageBus
     {
-        private string connectionString = "Endpoint=sb://foodecom.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=5LqiEfc/gVvUcslq1q6kdJARWbVz4SmDI+ASbC4KpbI=;EntityPath=emailshoppingcart";
+        private string connectionString = "Endpoint=sb://foodecom.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=tyMf74/F2vL63q0rgYDgqjYLN9D+Abgyp+ASbOvhKdE=";
         public async Task PublishMessage(object message, string topic_queue_Name)
         {
             await using var client = new ServiceBusClient(connectionString);
