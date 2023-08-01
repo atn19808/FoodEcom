@@ -1,5 +1,6 @@
 ﻿using FoodEcom.Services.OrderAPI.Service.IService;
 using Newtonsoft.Json;
+using FoodEcom.Services.OrderAPI.Models.Dto;
 
 namespace FoodEcom.Services.OrderAPI.Service
 {
