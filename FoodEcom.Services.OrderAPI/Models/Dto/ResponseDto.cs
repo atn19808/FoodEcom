@@ -1,4 +1,4 @@
-﻿namespace FoodEcom.Services.OrderAPI
+﻿namespace FoodEcom.Services.OrderAPI.Models.Dto
 {
     public class ResponseDto
     {
