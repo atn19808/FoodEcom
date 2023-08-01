@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodEcom.Services.ProductAP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodEcom.Services.ShoppingCartAPI", "FoodEcom.Services.ShoppingCartAPI\FoodEcom.Services.ShoppingCartAPI.csproj", "{EB773F08-E1EC-4819-B102-4A3351007C75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodEcom.MessageBus", "FoodEcom.MessageBus\FoodEcom.MessageBus.csproj", "{C21E95FA-D987-42D8-8E5E-F9EEADD8CCCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodEcom.MessageBus", "FoodEcom.MessageBus\FoodEcom.MessageBus.csproj", "{C21E95FA-D987-42D8-8E5E-F9EEADD8CCCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodEcom.Services.EmailAPI", "FoodEcom.Services.EmailAPI\FoodEcom.Services.EmailAPI.csproj", "{13B4F216-AFDA-4B4A-A1E9-CE577F945200}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodEcom.Services.EmailAPI", "FoodEcom.Services.EmailAPI\FoodEcom.Services.EmailAPI.csproj", "{13B4F216-AFDA-4B4A-A1E9-CE577F945200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodEcom.Services.OrderAPI", "FoodEcom.Services.OrderAPI\FoodEcom.Services.OrderAPI.csproj", "{06AEA336-BA28-4BD7-BD22-D0A7BBD64E84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{13B4F216-AFDA-4B4A-A1E9-CE577F945200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13B4F216-AFDA-4B4A-A1E9-CE577F945200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13B4F216-AFDA-4B4A-A1E9-CE577F945200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06AEA336-BA28-4BD7-BD22-D0A7BBD64E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06AEA336-BA28-4BD7-BD22-D0A7BBD64E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06AEA336-BA28-4BD7-BD22-D0A7BBD64E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06AEA336-BA28-4BD7-BD22-D0A7BBD64E84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{EB773F08-E1EC-4819-B102-4A3351007C75} = {937A333E-DA4F-4C7B-A41E-1B58DA90451C}
 		{C21E95FA-D987-42D8-8E5E-F9EEADD8CCCD} = {49916336-7E86-43EE-95AF-AA610EE03140}
 		{13B4F216-AFDA-4B4A-A1E9-CE577F945200} = {937A333E-DA4F-4C7B-A41E-1B58DA90451C}
+		{06AEA336-BA28-4BD7-BD22-D0A7BBD64E84} = {937A333E-DA4F-4C7B-A41E-1B58DA90451C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDC8674D-5750-44E0-B7E2-75B176A91414}
