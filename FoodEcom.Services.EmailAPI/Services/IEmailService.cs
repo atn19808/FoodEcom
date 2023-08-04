@@ -1,4 +1,5 @@
-﻿using FoodEcom.Services.EmailAPI.Models.Dto;
+﻿using FoodEcom.Services.EmailAPI.Message;
+using FoodEcom.Services.EmailAPI.Models.Dto;
 
 namespace FoodEcom.Services.EmailAPI.Services
 {
@@ -6,5 +7,6 @@ namespace FoodEcom.Services.EmailAPI.Services
     {
         Task EmailCartAndLog(CartDto cartDto);
         Task RegisterUserEmailAndLog(string email);
+        Task LogOrderPlaced(RewardsMessage rewardsDto);
     }
 }

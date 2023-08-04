@@ -1,4 +1,5 @@
 ﻿using FoodEcom.Services.EmailAPI.Data;
+using FoodEcom.Services.EmailAPI.Message;
 using FoodEcom.Services.EmailAPI.Models;
 using FoodEcom.Services.EmailAPI.Models.Dto;
 using Microsoft.EntityFrameworkCore;
@@ -32,6 +33,12 @@ namespace FoodEcom.Services.EmailAPI.Services
             message.Append("</ul>");
 
             await LogAndEmail(message.ToString(), cartDto.CartHeader.Email);
+        }
+
+        public async Task LogOrderPlaced(RewardsMessage rewardsDto)
+        {
+            string message = "New Order Placed. <br/> Order Id: " + rewardsDto.OrderId;
+            await LogAndEmail($"{message}", "dotnet@email.com");
         }
 
         public async Task RegisterUserEmailAndLog(string email)
