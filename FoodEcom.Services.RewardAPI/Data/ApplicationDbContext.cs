@@ -11,9 +11,5 @@ namespace FoodEcom.Services.RewardAPI.Data
         }
 
         public DbSet<Rewards> Rewards { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-        }
     }
 }
