@@ -63,7 +63,8 @@ namespace FoodEcom.Services.OrderAPI.Controllers
                 var options = new SessionCreateOptions
                 {
                     SuccessUrl = stripeRequestDto.ApprovedUrl,
-                    CancelUrl = stripeRequestDto.ApprovedUrl,                  
+                    CancelUrl = stripeRequestDto.CancelUrl,
+                    LineItems = new List<SessionLineItemOptions>(),
                     Mode = "payment",
                 };
 
