@@ -1,4 +1,5 @@
 using FoodEcom.Services.RewardAPI.Data;
+using FoodEcom.Services.RewardAPI.Extension;
 using FoodEcom.Services.RewardAPI.Messaging;
 using FoodEcom.Services.RewardAPI.Services;
 using Microsoft.EntityFrameworkCore;
@@ -34,7 +35,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UserAzureServiceBusConsumer();
 app.MapControllers();
 
 ApplyMigration();
