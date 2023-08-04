@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Azure;
 using FoodEcom.Services.OrderAPI.Data;
 using FoodEcom.Services.OrderAPI.Models;
 using FoodEcom.Services.OrderAPI.Models.Dto;
@@ -67,6 +68,13 @@ namespace FoodEcom.Services.OrderAPI.Controllers
                     LineItems = new List<SessionLineItemOptions>(),
                     Mode = "payment",
                 };
+                var discountObjs = new List<SessionDiscountOptions>()
+                {
+                    new SessionDiscountOptions
+                    {
+                        Coupon = stripeRequestDto.OrderHeader.CouponCode
+                    }
+                };
 
                 foreach (var item in stripeRequestDto.OrderHeader.OrderDetails)
                 {
@@ -85,6 +93,11 @@ namespace FoodEcom.Services.OrderAPI.Controllers
                     };
                     options.LineItems.Add(sessionLineItem);
                 }
+                if (stripeRequestDto.OrderHeader.Discount > 0)
+                {
+                    options.Discounts = discountObjs;
+                }
+
                 var service = new SessionService();
                 Session session = service.Create(options);
                 stripeRequestDto.StripeSessionUrl = session.Url;
@@ -92,6 +105,40 @@ namespace FoodEcom.Services.OrderAPI.Controllers
                 orderHeader.StripeSessionId = session.Id;
                 _db.SaveChanges();
                 _response.Result = stripeRequestDto;
+            }
+            catch (Exception ex)
+            {
+                _response.Message = ex.Message;
+                _response.IsSuccess = false;
+            }
+            return _response;
+        }
+    
+
+        [Authorize]
+        [HttpPost("ValidateStripeSession")]
+        public async Task<ResponseDto> ValidateStripeSession([FromBody] int orderHeaderId)
+        {
+            try
+            {
+                OrderHeader orderHeader = _db.OrderHeaders.First(u => u.OrderHeaderId == orderHeaderId);
+
+                var service = new SessionService();
+                Session session = service.Get(orderHeader.StripeSessionId);
+
+                var paymentIntentService = new PaymentIntentService();
+                PaymentIntent paymentIntent = paymentIntentService.Get(session.PaymentIntentId);
+
+                if (paymentIntent.Status == "succeeded")
+                {
+                    // then payment was successful
+                    orderHeader.PaymentIntentId = paymentIntent.Id;
+                    orderHeader.Status = SD.Status_Approved;
+                    _db.SaveChanges();
+
+                    _response.Result = _mapper.Map<OrderHeaderDto>(orderHeader);
+                }
+
             }
             catch (Exception ex)
             {

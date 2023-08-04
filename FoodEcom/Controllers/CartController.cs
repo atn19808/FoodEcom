@@ -1,5 +1,6 @@
 ﻿using FoodEcom.Web.Models;
 using FoodEcom.Web.Service.IService;
+using FoodEcom.Web.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -64,6 +65,18 @@ namespace FoodEcom.Web.Controllers
         [Authorize]
         public async Task<IActionResult> Confirmation(int orderId)
         {
+            ResponseDto? response = await _orderService.ValidateStripeSession(orderId);
+
+            if (response != null && response.IsSuccess)
+            {
+                OrderHeaderDto orderHeaderDto = JsonConvert.DeserializeObject<OrderHeaderDto>
+                    (Convert.ToString(response.Result));
+                if (orderHeaderDto.Status == SD.Status_Approved)
+                {
+                    return View(orderId);
+                }
+            }
+            // redirect to some error page based on status
             return View(orderId);
         }
 

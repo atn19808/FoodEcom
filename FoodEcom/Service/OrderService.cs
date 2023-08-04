@@ -31,5 +31,15 @@ namespace FoodEcom.Web.Service
                 Url = SD.OrderAPIBase + "/api/order/CreateStripeSession"
             });
         }
+
+        public async Task<ResponseDto?> ValidateStripeSession(int orderHeaderId)
+        {
+            return await _baseService.SendAsync(new Models.RequestDto()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = orderHeaderId,
+                Url = SD.OrderAPIBase + "/api/order/ValidateStripeSession"
+            });
+        }
     }
 }
