@@ -2,12 +2,14 @@
 using FoodEcom.Services.CouponAPI.Data;
 using FoodEcom.Services.CouponAPI.Models;
 using FoodEcom.Services.CouponAPI.Models.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FoodEcom.Services.CouponAPI.Controllers
 {
     [Route("api/coupon")]
     [ApiController]
+    [Authorize]
     public class CouponAPIController : Controller
     {
         private readonly ApplicationDbContext _db;
@@ -73,6 +75,7 @@ namespace FoodEcom.Services.CouponAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Post([FromBody] CouponDto couponDto)
         {
             try
@@ -80,6 +83,16 @@ namespace FoodEcom.Services.CouponAPI.Controllers
                 Coupon obj = _mapper.Map<Coupon>(couponDto);
                 _db.Coupons.Add(obj);
                 _db.SaveChanges();
+
+                var options = new Stripe.CouponCreateOptions
+                {
+                    AmountOff = (long)(couponDto.DiscountAmount * 100),
+                    Name = couponDto.CouponCode,
+                    Currency = "usd",
+                    Id = couponDto.CouponCode
+                };
+                var service = new Stripe.CouponService();
+                service.Create(options);
                 _response.Result = _mapper.Map<Coupon>(obj);
             }
             catch (Exception ex)
@@ -91,6 +104,7 @@ namespace FoodEcom.Services.CouponAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Put([FromBody] CouponDto couponDto)
         {
             try
@@ -109,6 +123,8 @@ namespace FoodEcom.Services.CouponAPI.Controllers
         }
 
         [HttpDelete]
+        [Route("{id:int}")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDto Delete(int id)
         {
             try
@@ -116,6 +132,9 @@ namespace FoodEcom.Services.CouponAPI.Controllers
                 Coupon obj = _db.Coupons.First(u => u.CouponId == id);
                 _db.Coupons.Remove(obj);
                 _db.SaveChanges();
+
+                var service = new Stripe.CouponService();
+                service.Delete(obj.CouponCode);
             }
             catch (Exception ex)
             {
